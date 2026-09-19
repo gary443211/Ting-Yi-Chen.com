@@ -3,8 +3,9 @@ backend:
   repo: gary443211/Ting-Yi-Chen.com
   branch: main
 
-# 若在本地測試後台，可取消註解下一行以啟用 local_backend (需搭配 npx decap-server)
-# local_backend: true
+# 啟用 Netlify Identity 整合
+identity_url: https://netlify.app
+gateway_url: https://netlify.app/.netlify/identity
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
