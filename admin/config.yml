@@ -5,7 +5,7 @@ backend:
 
 # 啟用 Netlify Identity 整合
 identity_url: https://voluble-taiyaki-9605eb.netlify.app/
-gateway_url: https://voluble-taiyaki-9605eb.netlify.app/.netlify/identity
+gateway_url: https://voluble-taiyaki-9605eb.netlify.app/.netlify/git
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
