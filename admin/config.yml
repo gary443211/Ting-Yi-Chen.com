@@ -2,10 +2,8 @@ backend:
   name: github
   repo: gary443211/Ting-Yi-Chen.com
   branch: main
-#   base_url: https://decap-cms-oauth.netlify.app
-#   auth_endpoint: /auth
-# identity:
-#   client_id: Ov23liPJkBmro1MQc5Ic
+  # 指向你的 Netlify 站點網址，讓 Netlify 辨識對應的 Client ID/Secret
+  site_domain: voluble-taiyaki-9605eb.netlify.app
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
