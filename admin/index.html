@@ -9,21 +9,12 @@
       type="image/svg+xml"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✒️</text></svg>"
     />
-    <!-- 1. 載入 Netlify Identity -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- 明確指定 config.yml 路徑，避免 GitHub Pages 子路徑 Failed to fetch -->
+    <link href="config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
-    <!-- 2. 初始化 Netlify Identity（必須在 Decap CMS 之前初始化） -->
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.init({
-          APIUrl:
-            "https://voluble-taiyaki-9605eb.netlify.app/.netlify/identity",
-        });
-      }
-    </script>
-
-    <!-- 3. 載入 Decap CMS -->
+    <!-- 載入 Decap CMS 主程式 -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
