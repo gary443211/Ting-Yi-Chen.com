@@ -1,0 +1,235 @@
+backend:
+  name: github
+  repo: gary443211/Ting-Yi-Chen.com
+  branch: main
+
+# 若在本地測試後台，可取消註解下一行以啟用 local_backend (需搭配 npx decap-server)
+# local_backend: true
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+display_url: "https://gary443211.github.io/Ting-Yi-Chen.com"
+site_url: "https://gary443211.github.io/Ting-Yi-Chen.com"
+
+collections:
+  - name: "profile"
+    label: "歌劇藝術家與網站內容 (Opera Profile & Content)"
+    delete: false
+    files:
+      - name: "content"
+        label: "歌劇網站主資料庫 (_data/content.json)"
+        file: "_data/content.json"
+        format: "json"
+        fields:
+          # 1. 歌劇大劇院啟幕頁設定
+          - label: "劇院啟幕帷幕 (Theatrical Curtain Splash)"
+            name: "splash"
+            widget: "object"
+            fields:
+              - {
+                  label: "主標題 (Main Title)",
+                  name: "title",
+                  widget: "string",
+                }
+              - {
+                  label: "聲部與教席副標 (Subtitle)",
+                  name: "subtitle",
+                  widget: "string",
+                }
+              - {
+                  label: "劇院徽標副標 (Tagline)",
+                  name: "tagline",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "啟幕按鈕文字 (Curtain Button Text)",
+                  name: "button_text",
+                  widget: "string",
+                }
+
+          # 2. Act I: 聲樂家自述與教席
+          - label: "Act I: 聲樂家與教席自述 (Vocal Artist & Pedagogy)"
+            name: "bio"
+            widget: "object"
+            fields:
+              - { label: "姓名 (Full Name)", name: "name", widget: "string" }
+              - {
+                  label: "聲部 (Vocal Fach, e.g. 抒情戲劇女高音)",
+                  name: "fach",
+                  widget: "string",
+                }
+              - {
+                  label: "專業職銜 (Role / Academic Title)",
+                  name: "role",
+                  widget: "string",
+                }
+              - {
+                  label: "藝術信念引言 (Artistic Statement)",
+                  name: "tagline",
+                  widget: "string",
+                }
+              - {
+                  label: "個人肖像/演出劇照 (Portrait / Stage Photo)",
+                  name: "avatar",
+                  widget: "image",
+                  required: false,
+                }
+              - {
+                  label: "詳細藝術自傳與教學理念 (Bio Markdown)",
+                  name: "content",
+                  widget: "markdown",
+                }
+              - label: "生涯里程碑指標 (Highlights / Milestones)"
+                name: "highlights"
+                widget: "list"
+                fields:
+                  - {
+                      label: "項目名稱 (Label)",
+                      name: "label",
+                      widget: "string",
+                    }
+                  - {
+                      label: "數量統計 (Value, e.g. 25+)",
+                      name: "value",
+                      widget: "string",
+                    }
+
+          # 3. Act II: 經典歌劇劇目與代表角色
+          - label: "Act II: 經典歌劇劇目 (Operatic Repertoire)"
+            name: "portfolio"
+            widget: "list"
+            summary: "{{fields.title}} - {{fields.category}}"
+            fields:
+              - {
+                  label: "歌劇名稱與劇目 (Opera Title)",
+                  name: "title",
+                  widget: "string",
+                }
+              - {
+                  label: "作曲家與飾演角色 (Composer & Role)",
+                  name: "category",
+                  widget: "string",
+                }
+              - {
+                  label: "劇照封面或劇院海報 (Stage Photo / Poster)",
+                  name: "image",
+                  widget: "image",
+                }
+              - {
+                  label: "角色詮釋與代表樂評 (Role Description & Reviews)",
+                  name: "description",
+                  widget: "text",
+                }
+              - {
+                  label: "劇院官方連結或樂評報導 (Production Link)",
+                  name: "link",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "標籤關鍵字 (Tags)",
+                  name: "tags",
+                  widget: "list",
+                  required: false,
+                }
+
+          # 4. Act III: 演出履歷與教席時間軸
+          - label: "Act III: 演出歷程與教席編年史 (Stage Chronicle)"
+            name: "experience"
+            widget: "list"
+            summary: "{{fields.year}} - {{fields.role}} @ {{fields.company}}"
+            fields:
+              - {
+                  label: "劇院 / 音樂節 / 音樂學府名稱 (Institution / Theater)",
+                  name: "company",
+                  widget: "string",
+                }
+              - {
+                  label: "領銜角色或教授職銜 (Role / Title)",
+                  name: "role",
+                  widget: "string",
+                }
+              - {
+                  label: "演出年份 / 講席週期 (Year / Period)",
+                  name: "year",
+                  widget: "string",
+                }
+              - {
+                  label: "演出詳情與學術執掌 (Description)",
+                  name: "description",
+                  widget: "text",
+                }
+
+          # 5. Act IV: 名家詠嘆調與影音串接
+          - label: "Act IV: 詠嘆調與大師班影音 (Arias & Masterclasses)"
+            name: "media"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {
+                  label: "詠嘆調 / 講席標題 (Title)",
+                  name: "title",
+                  widget: "string",
+                }
+              - {
+                  label: "演出劇院或協奏樂團 (Subtitle)",
+                  name: "subtitle",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "嵌入影片網址 (YouTube/Vimeo Embed URL)",
+                  name: "video_url",
+                  widget: "string",
+                }
+              - {
+                  label: "樂曲劇情導聆或講席說明 (Description)",
+                  name: "description",
+                  widget: "text",
+                  required: false,
+                }
+
+          # 6. Encore: 邀演與學術聯繫
+          - label: "Encore: 邀演與學術聯繫 (Inquiries & Contact)"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {
+                  label: "公務與邀演信箱 (Official Email)",
+                  name: "email",
+                  widget: "string",
+                }
+              - {
+                  label: "研究室電話 (Conservatory Phone)",
+                  name: "phone",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "常駐城市 (Base Locations)",
+                  name: "location",
+                  widget: "string",
+                }
+              - {
+                  label: "邀約陳述 (Invitation Statement)",
+                  name: "statement",
+                  widget: "text",
+                  required: false,
+                }
+              - label: "藝術家檔案與社群 (Artist Profiles & Socials)"
+                name: "socials"
+                widget: "list"
+                fields:
+                  - {
+                      label: "平台名稱 (Platform, e.g. Operabase)",
+                      name: "name",
+                      widget: "string",
+                    }
+                  - { label: "連結網址 (URL)", name: "url", widget: "string" }
+                  - {
+                      label: "圖示代碼 (FontAwesome Class)",
+                      name: "icon",
+                      widget: "string",
+                    }
