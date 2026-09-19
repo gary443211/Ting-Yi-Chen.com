@@ -6,17 +6,29 @@
     "button_text": "✦ RAISE THE CURTAIN / 揭幕入席 ✦"
   },
   "bio": {
-    "name": "陳亭儀 Ting-Yi Chen",
-    "fach": "Lirico-Spinto Soprano 抒情戲劇女高音",
-    "role": "歌劇聲樂藝術家 ‧ 國立藝術大學聲樂系教授",
+    "name": "陳亭屹 Ting-Yi Chen",
+    "fach": "男中音 baritone",
+    "role": "歌劇聲樂藝術家 ‧ 國立大學聲樂系教授",
     "tagline": "「以極致的呼吸與聲線，在歌劇殿堂中鐫刻人類靈魂的永恆共鳴。」",
     "avatar": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=80",
-    "content": "陳亭儀（Ting-Yi Chen），著名女高音歌唱家，現任國立藝術大學音樂學系聲樂教授。畢業於**奧地利維也納國立音樂暨表演藝術大學**（MDW）歌劇與聲樂演唱最高演奏家文憑。\n\n其嗓音被歐洲歌劇樂評譽為「**兼具純淨如銀的穿透力與深邃熾熱的情感張力**」。曾受邀於維也納國家歌劇院、米蘭斯卡拉歌劇院客席巡演、國家兩廳院與衛武營國家藝術文化中心，領銜主演普契尼《托斯卡》、《波希米亞人》、威爾第《茶花女》、《阿依達》等數十部經典歌劇主角。\n\n在學術與教育領域，陳教授致力於古典義大利美聲學派（Bel Canto）之科學發聲法與舞台戲劇表演體系傳承，長年受邀於薩爾茲堡國際音樂夏令營、歐洲知名音樂學院開設大師班，培育眾多傑出青年歌唱家榮獲國際聲樂大賽首獎。",
+    "content": "陳亭屹（Ting-Yi Chen），著名女高音歌唱家，現任國立藝術大學音樂學系聲樂教授。畢業於**奧地利維也納國立音樂暨表演藝術大學**（MDW）歌劇與聲樂演唱最高演奏家文憑。\n\n其嗓音被歐洲歌劇樂評譽為「**兼具純淨如銀的穿透力與深邃熾熱的情感張力**」。曾受邀於維也納國家歌劇院、米蘭斯卡拉歌劇院客席巡演、國家兩廳院與衛武營國家藝術文化中心，領銜主演普契尼《托斯卡》、《波希米亞人》、威爾第《茶花女》、《阿依達》等數十部經典歌劇主角。\n\n在學術與教育領域，陳教授致力於古典義大利美聲學派（Bel Canto）之科學發聲法與舞台戲劇表演體系傳承，長年受邀於薩爾茲堡國際音樂夏令營、歐洲知名音樂學院開設大師班，培育眾多傑出青年歌唱家榮獲國際聲樂大賽首獎。",
     "highlights": [
-      { "label": "主演歌劇主角 (Opera Roles)", "value": "25+" },
-      { "label": "國際知名劇院 (Major Theaters)", "value": "30+" },
-      { "label": "大師班與講席 (Masterclasses)", "value": "60+" },
-      { "label": "教席育才年資 (Years Teaching)", "value": "15+" }
+      {
+        "label": "主演歌劇主角 (Opera Roles)",
+        "value": "25+"
+      },
+      {
+        "label": "國際知名劇院 (Major Theaters)",
+        "value": "30+"
+      },
+      {
+        "label": "大師班與講席 (Masterclasses)",
+        "value": "60+"
+      },
+      {
+        "label": "教席育才年資 (Years Teaching)",
+        "value": "15+"
+      }
     ]
   },
   "experience": [
@@ -52,7 +64,12 @@
       "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1200&q=80",
       "description": "「陳亭儀的托斯卡兼具高貴熱烈與驚心動魄的戲劇張力，在第二幕〈為藝術，為愛情〉（Vissi d'arte）的長線條歌唱中展現了近乎奇蹟的氣息掌控與情感昇華。」——《歐洲歌劇評論雜誌》",
       "link": "https://npac-ntt.org",
-      "tags": ["Verismo Opera", "Puccini", "Tosca", "Flagship Production"]
+      "tags": [
+        "Verismo Opera",
+        "Puccini",
+        "Tosca",
+        "Flagship Production"
+      ]
     },
     {
       "title": "威爾第：歌劇《茶花女》 (La Traviata)",
@@ -60,7 +77,12 @@
       "image": "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1200&q=80",
       "description": "完美駕馭第一幕〈及時行樂〉（Sempre libera）的高超花腔技巧，並在第三幕以淒美動人的弱音（Pianissimo）細膩刻劃女主角走向命運終點的悲憫與昇華。",
       "link": "https://npac-ntt.org",
-      "tags": ["Bel Canto", "Verdi", "La Traviata", "Coloratura"]
+      "tags": [
+        "Bel Canto",
+        "Verdi",
+        "La Traviata",
+        "Coloratura"
+      ]
     },
     {
       "title": "莫札特：歌劇《費加洛婚禮》 (Le Nozze di Figaro)",
@@ -68,7 +90,12 @@
       "image": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1200&q=80",
       "description": "以醇美純淨的莫札特式經典音色詮釋〈何處尋覓那美好的時光〉（Dove sono），將伯爵夫人內心隱忍的哀愁與古典貴族尊嚴刻劃得入木三分。",
       "link": "https://npac-ntt.org",
-      "tags": ["Mozart", "Classical Opera", "Contessa", "Pure Tone"]
+      "tags": [
+        "Mozart",
+        "Classical Opera",
+        "Contessa",
+        "Pure Tone"
+      ]
     },
     {
       "title": "理查 ‧ 史特勞斯：歌劇《玫瑰騎士》 (Der Rosenkavalier)",
@@ -76,7 +103,11 @@
       "image": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=1200&q=80",
       "description": "詮釋德語後期浪漫派的交響歌劇巔峰之作，以深厚的人生洞察與德語正統聲韻，展現時光流逝與哲學沉思的唯美重唱三重奏。",
       "link": "https://npac-ntt.org",
-      "tags": ["R. Strauss", "Late Romantic", "Die Feldmarschallin"]
+      "tags": [
+        "R. Strauss",
+        "Late Romantic",
+        "Die Feldmarschallin"
+      ]
     }
   ],
   "media": [
