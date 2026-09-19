@@ -3,7 +3,7 @@ backend:
   repo: gary443211/Ting-Yi-Chen.com
   branch: main
   # 指向你的 Netlify 站點網址，讓 Netlify 辨識對應的 Client ID/Secret
-  site_domain: voluble-taiyaki-9605eb.netlify.app
+  site_domain: ting-yi-chen.netlify.app
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
