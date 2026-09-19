@@ -9,13 +9,14 @@
       type="image/svg+xml"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✒️</text></svg>"
     />
-    <!-- Netlify Identity (若部署於 Netlify 可自動啟用認證) -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    </script>
   </head>
   <body>
     <!-- Decap CMS 核心載入 -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
+      // 💡 關鍵修正：手動指定要連接的 Netlify 後台網址
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", function (user) {
           if (!user) {
@@ -25,6 +26,15 @@
           }
         });
       }
+
+      // 💡 額外新增：強制將 Widget 綁定到你的 Netlify 專案
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.init({
+            APIugen: "https://netlify.app"
+          });
+        }
+      });
     </script>
   </body>
 </html>
