@@ -2,10 +2,10 @@ backend:
   name: github
   repo: gary443211/Ting-Yi-Chen.com
   branch: main
-  base_url: https://decap-cms-oauth.netlify.app
-  auth_endpoint: /auth
-identity:
-  client_id: Ov23liPJkBmro1MQc5Ic
+#   base_url: https://decap-cms-oauth.netlify.app
+#   auth_endpoint: /auth
+# identity:
+#   client_id: Ov23liPJkBmro1MQc5Ic
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
