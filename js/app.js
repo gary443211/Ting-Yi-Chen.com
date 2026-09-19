@@ -474,6 +474,22 @@ function setupNavigation() {
         }
       });
     });
+
+    // Close mobile drawer when tapping outside
+    document.addEventListener("click", (e) => {
+      if (
+        menu.classList.contains("open") &&
+        !menu.contains(e.target) &&
+        !toggleBtn.contains(e.target)
+      ) {
+        menu.classList.remove("open");
+        const icon = toggleBtn.querySelector("i");
+        if (icon) {
+          icon.classList.add("fa-bars");
+          icon.classList.remove("fa-xmark");
+        }
+      }
+    });
   }
 
   // Active section observer
