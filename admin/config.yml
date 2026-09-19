@@ -4,8 +4,8 @@ backend:
   branch: main
 
 # 啟用 Netlify Identity 整合
-identity_url: https://netlify.app
-gateway_url: https://netlify.app/.netlify/identity
+identity_url: https://voluble-taiyaki-9605eb.netlify.app/
+gateway_url: https://voluble-taiyaki-9605eb.netlify.app/.netlify/identity
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
