@@ -4,8 +4,8 @@ backend:
   branch: main
   base_url: https://decap-cms-oauth.netlify.app
   auth_endpoint: /auth
-identity:
-  client_id: Ov23li8Bx3ksZHYTuxA0
+# identity:
+#   client_id: Ov23li8Bx3ksZHYTuxA0
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
