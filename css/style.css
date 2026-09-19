@@ -1070,29 +1070,9 @@ section::before {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.footer-admin-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--gold-primary);
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  padding: 0.45rem 1rem;
-  border: 1px solid var(--gold-border-subtle);
-  border-radius: 4px;
-  transition: var(--transition-smooth);
-}
-
-.footer-admin-link:hover {
-  color: #ffffff;
-  border-color: var(--gold-primary);
-  background: var(--gold-glow);
+  text-align: center;
 }
 
 /* ==========================================================================

@@ -177,6 +177,7 @@ async function initApp() {
   setupSplashDismissal();
   setupNavigation();
   setupEmailCopy(siteData.contact.email);
+  setupAdminShortcut();
 }
 
 /**
@@ -493,6 +494,48 @@ function setupNavigation() {
       }
     });
   });
+}
+
+/**
+ * 9. Discreet Admin Shortcut (Invisible to general visitors)
+ * - Pressing Ctrl + Shift + A (or Cmd + Shift + A) navigates to /admin/
+ * - Triple-clicking the copyright text in the footer navigates to /admin/
+ */
+function setupAdminShortcut() {
+  // Update copyright year dynamically
+  const yearEl = document.getElementById("current-year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Keyboard shortcut: Ctrl + Shift + A / Cmd + Shift + A
+  window.addEventListener("keydown", (e) => {
+    if (
+      (e.ctrlKey || e.metaKey) &&
+      e.shiftKey &&
+      (e.key === "A" || e.key === "a")
+    ) {
+      e.preventDefault();
+      window.location.href = "admin/";
+    }
+  });
+
+  // Triple-click on copyright notice
+  const copyrightEl = document.querySelector(".copyright");
+  if (copyrightEl) {
+    let clickCount = 0;
+    let clickTimer = null;
+    copyrightEl.addEventListener("click", () => {
+      clickCount++;
+      clearTimeout(clickTimer);
+      if (clickCount >= 3) {
+        window.location.href = "admin/";
+        clickCount = 0;
+      } else {
+        clickTimer = setTimeout(() => {
+          clickCount = 0;
+        }, 600);
+      }
+    });
+  }
 }
 
 /**
