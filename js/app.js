@@ -194,6 +194,22 @@ function renderSplashScreen(splash) {
   if (btnEl && splash.button_text) {
     btnEl.innerHTML = `<span>${escapeHTML(splash.button_text)}</span> <i class="fa-solid fa-arrow-right"></i>`;
   }
+
+  // Update social preview share image if configured
+  if (splash && splash.share_image) {
+    try {
+      const shareUrl = new URL(splash.share_image, window.location.href).href;
+      document
+        .querySelectorAll(
+          'meta[property="og:image"], meta[property="og:image:secure_url"], meta[name="twitter:image"]',
+        )
+        .forEach((meta) => {
+          meta.setAttribute("content", shareUrl);
+        });
+    } catch (e) {
+      console.warn("Could not resolve share_image URL:", e);
+    }
+  }
 }
 
 /**

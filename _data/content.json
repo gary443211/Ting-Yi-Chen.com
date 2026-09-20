@@ -3,7 +3,8 @@
     "title": "Ting-Yi Chen",
     "subtitle": "LYRIC BARITONE ‧ PROFESSOR OF VOCAL MUSIC",
     "tagline": "National Tsing Hua University (NTHU)",
-    "button_text": "✦ RAISE THE CURTAIN / 揭幕入席 ✦"
+    "button_text": "✦ RAISE THE CURTAIN / 揭幕入席 ✦",
+    "share_image": "/assets/images/ting.jpg"
   },
   "bio": {
     "name": "陳亭屹 Ting-Yi Chen",
@@ -64,12 +65,7 @@
       "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1200&q=80",
       "description": "「陳亭儀的托斯卡兼具高貴熱烈與驚心動魄的戲劇張力，在第二幕〈為藝術，為愛情〉（Vissi d'arte）的長線條歌唱中展現了近乎奇蹟的氣息掌控與情感昇華。」——《歐洲歌劇評論雜誌》",
       "link": "https://npac-ntt.org",
-      "tags": [
-        "Verismo Opera",
-        "Puccini",
-        "Tosca",
-        "Flagship Production"
-      ]
+      "tags": ["Verismo Opera", "Puccini", "Tosca", "Flagship Production"]
     },
     {
       "title": "威爾第：歌劇《茶花女》 (La Traviata)",
@@ -77,12 +73,7 @@
       "image": "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=1200&q=80",
       "description": "完美駕馭第一幕〈及時行樂〉（Sempre libera）的高超花腔技巧，並在第三幕以淒美動人的弱音（Pianissimo）細膩刻劃女主角走向命運終點的悲憫與昇華。",
       "link": "https://npac-ntt.org",
-      "tags": [
-        "Bel Canto",
-        "Verdi",
-        "La Traviata",
-        "Coloratura"
-      ]
+      "tags": ["Bel Canto", "Verdi", "La Traviata", "Coloratura"]
     },
     {
       "title": "莫札特：歌劇《費加洛婚禮》 (Le Nozze di Figaro)",
@@ -90,12 +81,7 @@
       "image": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1200&q=80",
       "description": "以醇美純淨的莫札特式經典音色詮釋〈何處尋覓那美好的時光〉（Dove sono），將伯爵夫人內心隱忍的哀愁與古典貴族尊嚴刻劃得入木三分。",
       "link": "https://npac-ntt.org",
-      "tags": [
-        "Mozart",
-        "Classical Opera",
-        "Contessa",
-        "Pure Tone"
-      ]
+      "tags": ["Mozart", "Classical Opera", "Contessa", "Pure Tone"]
     },
     {
       "title": "理查 ‧ 史特勞斯：歌劇《玫瑰騎士》 (Der Rosenkavalier)",
@@ -103,18 +89,14 @@
       "image": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=1200&q=80",
       "description": "詮釋德語後期浪漫派的交響歌劇巔峰之作，以深厚的人生洞察與德語正統聲韻，展現時光流逝與哲學沉思的唯美重唱三重奏。",
       "link": "https://npac-ntt.org",
-      "tags": [
-        "R. Strauss",
-        "Late Romantic",
-        "Die Feldmarschallin"
-      ]
+      "tags": ["R. Strauss", "Late Romantic", "Die Feldmarschallin"]
     }
   ],
   "media": [
     {
       "title": "普契尼：《托斯卡》經典名曲〈為藝術，為愛情〉(Vissi d'arte)",
       "subtitle": "國家戲劇院 旗艦歌劇現場實況錄影 (Live at National Theater)",
-      "video_url": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
+      "video_url": "https://www.youtube.com/embed/ZIO5PNKUluQ?si=IXpUmUAiWXRBYim3",
       "description": "陳亭儀教授於國家戲劇院年度大戲領銜演出普契尼名作《托斯卡》，由國家交響樂團 (NSO) 磅礴協奏，展現極具戲劇張力與深情訴說的美聲極致境界。"
     }
   ],

@@ -47,6 +47,12 @@ collections:
                   name: "button_text",
                   widget: "string",
                 }
+              - {
+                  label: "社群分享預覽縮圖 (Social Share Thumbnail)",
+                  name: "share_image",
+                  widget: "image",
+                  required: false,
+                }
 
           # 2. Act I: 聲樂家自述與教席
           - label: "Act I: 聲樂家與教席自述 (Vocal Artist & Pedagogy)"
